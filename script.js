@@ -40,22 +40,3 @@ document.getElementById('decryptButton').addEventListener('click', function() {
     document.getElementById('result').value = decryptedText;
 });
 
-// Fungsi untuk mengubah nama proyek dan latar belakang
-document.getElementById('setBackgroundButton').addEventListener('click', function() {
-    const backgroundUrl = document.getElementById('backgroundInput').value;
-    const projectName = document.getElementById('projectNameInput').value;
-
-    // Mengatur gambar latar belakang
-    if (backgroundUrl) {
-        document.body.style.backgroundImage = `url('${backgroundUrl}')`;
-    } else {
-        alert("Silakan masukkan URL gambar.");
-    }
-
-    // Mengatur nama proyek
-    if (projectName) {
-        document.getElementById('projectName').innerText = projectName;
-    } else {
-        alert("Silakan masukkan nama proyek.");
-    }
-});

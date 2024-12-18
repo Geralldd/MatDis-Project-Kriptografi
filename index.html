@@ -3,16 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> MatDis Project Kriptografi</title>
+    <title>Proyek Kriptografi - Cipher Teks Kunci 20</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Selamat Datang di Proyek Kriptografi</h1>
+        <h1>Gerald Andrew Senjaya F1E124044</h1>
+    <header> 
+        <h1> Project Kriptografi Cipher Teks </h1>
+        <h1> Cipher Teks Kunci 20 </h1>
+    </header>
     </header>
     <main>
-        <p>Ini adalah contoh proyek kriptografi menggunakan HTML, CSS, dan JavaScript.</p>
-        <button id="myButton">Klik Saya</button>
+        <label for="textInput">Masukkan Teks:</label>
+        <textarea id="textInput" rows="4" cols="50" placeholder="Masukkan teks di sini..."></textarea>
+
+        <label for="keyInput">Masukkan Kunci (1-20):</label>
+        <input type="number" id="keyInput" value="20" min="1" max="20">
+
+        <button id="encryptButton">Enkripsi</button>
+        <button id="decryptButton">Dekripsi</button>
+
+        <h2>Hasil:</h2>
+        <textarea id="result" rows="4" cols="50" readonly></textarea>
     </main>
     <script src="script.js"></script>
 </body>
